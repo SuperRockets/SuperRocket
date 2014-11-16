@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<!-- 실제 매핑되는 클래스의 경로 이다(하단 소스 참조) -->
+<mapper namespace="com.superrocket.app.RestMapper">
+  <!-- <cache-ref namespace=""/> -->
+  	<resultMap type="com.superrocket.app.Rest" id="RestResultMap">
+  		<result property="name" column="name"/>
+  	</resultMap>
+  	
+  	<!-- select -->
+  	<select id="getRest" resultMap="RestResultMap">
+  		select * from home
+  	</select>
+  	
+  	<!--  insert -->
+  	<insert id="insertRest" parameterType="com.superrocket.app.Rest">
+  		insert into home values ( #{name})
+  	</insert>
+  	
+  	<!--  
+  	<update id="updateMember"></update>
+  	
+  	<delete id="deleteMember" parameterType="com.superrocket.app.Rest">
+  	</delete>
+  	-->
+</mapper>
