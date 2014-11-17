@@ -10,6 +10,8 @@ import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
+
+
 /**
  * Handles requests for the application home page.
  */
@@ -26,7 +28,7 @@ public class RestTestController {
 	 */
 	@RequestMapping("/restTest")
 	//public String restTest() throws Exception {
-	public String restTest(@RequestBody String str) throws Exception {
+	public List restTest(@RequestBody String str) throws Exception {
 		logger.info("restTest start");
 		logger.info("String str : " + str);
 		ObjectMapper om = new ObjectMapper();
@@ -37,7 +39,7 @@ public class RestTestController {
 		List lst = restDAOService.getRest();
 		logger.info("lst.size : " + lst.size());
 		
-		return "home";
+		return lst;
 	}
 	
 	@RequestMapping("/restDbInsertTest")
