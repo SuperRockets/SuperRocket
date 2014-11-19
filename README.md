@@ -32,4 +32,4 @@ http://spring.io/tools/sts 에서 3.6.2 release 다운후 적당한 곳에 압�
 ex) D:\dev\sts-3.6.2.RELEASE
 Source Checkout
 
-git clone git@github.com:SuperRockets/SuperRocket.git
+git clone git@github.com:SuperRockets/SuperRocket.git 
