@@ -37,7 +37,7 @@ ex) D:\dev\sts-3.6.2.RELEASE
 
 STS 실행후 프로젝트 IMPORT 한다. 
 git > projuct from git > clone URI
-URI 에 SuperRocket git 주소 입력. 아이디 패스워드 입력후 진행.
+URI 에 SuperRocket git 주소 입력. 아이디 패스워드 입력후 진행. 
 
 소스 받은후 maven에서 라이브러리 다운받아지는 시간동안 대기.
 
