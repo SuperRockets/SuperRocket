@@ -12,11 +12,19 @@
 	<!-- Mybatis를 사용하는 패키지 경로를 적어준다.  -->    
     <context:component-scan base-package="com.superrocket.app" />
     <!-- MyBatis -->
+    <!--  
     <bean id="dataSource" class="org.apache.ibatis.datasource.pooled.PooledDataSource">
         <property name="driver" value="com.mysql.jdbc.Driver"></property>
         <property name="url" value="jdbc:mysql://localhost:3308/test"></property>
         <property name="username" value="test"></property>
         <property name="password" value="1111"></property>
+    </bean>
+    -->
+    <bean id="dataSource" class="org.apache.ibatis.datasource.pooled.PooledDataSource">
+        <property name="driver" value="com.mysql.jdbc.Driver"></property>
+        <property name="url" value="jdbc:mysql://superrocket.cb93o65rjnkm.ap-northeast-1.rds.amazonaws.com:3306/superrocket"></property>
+        <property name="username" value="admin"></property>
+        <property name="password" value="java1234"></property>
     </bean>
     
     <!-- 트랜잭션 -->
