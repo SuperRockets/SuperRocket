@@ -88,9 +88,11 @@
 	<br/>
 	<br/>
 	<input type="text" name="name" id="name" />
-	<button id="btn03">Restful 인서트 테스트</button><br/>
+	<button id="btn03" class="btn btn-ttc">Restful 인서트 테스트</button> *부트스트랩 적용 버튼<br/>
 	*rest 호출<br/>
 	클릭 > controller > service > dao > DB > json object
-
+	<br/>
+	<br/>
+	<a href="http://bootstrapk.com/BS3/getting-started" target="_blank">부트스트랩 시작하기 페이지</a>
 </body>
 </html>
