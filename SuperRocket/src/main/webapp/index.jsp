@@ -5,7 +5,7 @@
 <html>
 <head>
 	<title>index</title>
-	<script type="text/javascript" src="<c:url value="/resources/js/jquery-2.1.1.js"/>"></script>
+	<jsp:include page="/WEB-INF/views/common/resCommon.jsp"></jsp:include>
 	<script type="text/javascript">
 		$(document).ready(function(){
 			$("#btn01").click(function(){
